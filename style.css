@@ -75,3 +75,11 @@ body {
   background: #ae52dd;
   transform: rotateY(90deg) translateZ(-150px);
 }
+
+.stairs .step i {
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 100%;
+  background: #a54bcf;
+}
