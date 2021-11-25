@@ -19,6 +19,15 @@ body {
   height: 300px;
   transform-style: preserve-3d;
   transform: rotateX(-30deg) rotateY(160deg);
+  animation: animate 10s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: rotateX(-30deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(-30deg) rotateY(360deg);
+  }
 }
 
 .stairs .base {
