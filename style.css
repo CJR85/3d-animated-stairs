@@ -60,6 +60,11 @@ body {
   transform: rotateX(90deg) translateZ(150px);
 }
 
+.stairs .step:hover::before {
+  filter: brightness(1.1);
+  cursor: pointer;
+}
+
 .stairs .step::after {
   content: '';
   position: absolute;
