@@ -33,9 +33,19 @@ body {
 .stairs .base {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 60px;
   width: 360px;
   height: 300px;
   background: #000;
   transform: rotateX(90deg) translateZ(-150px);
+}
+
+.stairs .step {
+  position: absolute;
+  left: calc(60px * var(--j));
+  bottom: 0;
+  width: 60px;
+  height: calc(60px * var(--j));
+  background: #f00;
+  transform-style: preserve-3d;
 }
