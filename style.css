@@ -18,7 +18,7 @@ body {
   width: 500px;
   height: 300px;
   transform-style: preserve-3d;
-  transform: rotateX(-30deg) rotateY(160deg);
+  transform: rotateX(-30deg) rotateY(250deg);
   animation: animate 10s linear infinite;
 }
 @keyframes animate {
@@ -36,8 +36,10 @@ body {
   left: 60px;
   width: 360px;
   height: 300px;
-  background: #000;
-  transform: rotateX(90deg) translateZ(-150px);
+  background: #a54bcf;
+  transform: rotateX(90deg) translateZ(-150px) scale(1.25);
+  filter: blur(20px);
+  opacity: 0.5;
 }
 
 .stairs .step {
@@ -82,6 +84,7 @@ body {
   width: 60px;
   height: 100%;
   background: #a54bcf;
+  transform-style: preserve-3d;
 }
 
 .stairs .step i:nth-child(1) {
@@ -90,4 +93,15 @@ body {
 
 .stairs .step i:nth-child(2) {
   transform: translateZ(-150px);
+}
+
+.stairs .step:last-child i:nth-child(2)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  background: #ae52dd;
+  transform: rotateY(90deg) translate3d(-150px, 0, -90px);
 }
