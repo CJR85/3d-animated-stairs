@@ -83,3 +83,11 @@ body {
   height: 100%;
   background: #a54bcf;
 }
+
+.stairs .step i:nth-child(1) {
+  transform: translateZ(150px);
+}
+
+.stairs .step i:nth-child(2) {
+  transform: translateZ(-150px);
+}
